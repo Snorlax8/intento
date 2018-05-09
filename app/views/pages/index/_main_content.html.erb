@@ -1,0 +1,19 @@
+<div id="main-content" class="col-sm-9">
+  <h3 class="page-name"><%= link_to 'Comida', comida_posts_path %></h3>
+  <div class="row">
+    <%= render @comida_posts %>
+    <%= render no_posts_partial_path(@comida_posts) %>
+  </div><!-- row -->
+
+  <h3 class="page-name"><%= link_to 'Perros', perros_posts_path %></h3>
+  <div class="row">
+    <%= render @perros_posts %>
+    <%= render no_posts_partial_path(@perros_posts) %>
+  </div><!-- row -->
+
+  <h3 class="page-name"><%= link_to 'Videojuegos', videojuegos_posts_path %></h3>
+  <div class="row">
+    <%= render @videojuegos_posts %>
+    <%= render no_posts_partial_path(@videojuegos_posts) %>
+  </div><!-- row -->
+</div><!-- main_content -->

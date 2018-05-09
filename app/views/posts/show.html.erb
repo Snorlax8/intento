@@ -1,0 +1,9 @@
+<div id="single-post-content" class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="posted-by">Posted by <%= Post.find(params[:id]).user.name %></div>
+      <h3><%= Post.find(params[:id]).title %></h3>
+      <p><%= Post.find(params[:id]).content %></p>
+    </div>
+  </div><!-- row -->
+</div>
